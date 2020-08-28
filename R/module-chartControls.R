@@ -463,7 +463,7 @@ controls_appearance <- function(ns) {
       inputId = ns("theme"),
       label = "Theme:",
       choices = themes,
-      selected = getOption("esquisse.default.theme"),
+      selected = "theme_bw",#getOption("esquisse.default.theme"),
       options = list(size = 10, container = "body"),
       width = "100%"
     ),
