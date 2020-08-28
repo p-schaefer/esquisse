@@ -344,7 +344,9 @@ chartControlsServer <- function(input,
     outin$smooth <- list(
       add = input$smooth_add,
       args = list(
-        span = input$smooth_span
+        #span = input$smooth_span
+        method="lm",
+        se=F
       )
     )
   })
