@@ -511,18 +511,18 @@ controls_params <- function(ns) {
     tags$div(
       id = ns("controls-scatter"), style = "display: none; padding-top: 10px;",
       conditionalPanel(
-        condition = paste0("input['",  ns("smooth_add"), "']==true"),
-        sliderInput(
-          inputId = ns("smooth_span"), 
-          label = "Span:", 
-          min = 0.1, max = 1, 
-          value = 0.75, step = 0.01, 
-          width = "100%"
-        )
+        condition = paste0("input['",  ns("smooth_add"), "']==true")#,
+        #sliderInput(
+        #  inputId = ns("smooth_span"), 
+        #  label = "Span:", 
+        #  min = 0.1, max = 1, 
+        #  value = 0.75, step = 0.01, 
+        #  width = "100%"
+        #)
       ),
       materialSwitch(
         inputId = ns("smooth_add"), 
-        label = "Smooth line:",
+        label = "Trend line:",
         right = TRUE, 
         status = "primary"
       )
